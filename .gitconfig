@@ -1,0 +1,7 @@
+[user]
+	email = william.p.paul@gmail.com
+	name = williampeterpaul
+[http]
+	sslCAinfo = /etc/ssl/certs/ca-certificates.crt
+[alias]
+	lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
