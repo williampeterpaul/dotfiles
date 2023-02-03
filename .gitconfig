@@ -1,5 +1,9 @@
 [user]
-	email = william.p.paul@gmail.com
+	email = williampeterpaul@pm.me
 	name = williampeterpaul
 [alias]
-	lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	dd = !git diff --color-words $(git rev-list -n1 --before=\"12 hours ago\" HEAD)
+	dw = !git diff --color-words $(git rev-list -n1 --before=\"5 days ago\" HEAD)
+[commit]
+	template = /Users/w/.git-commit-template.txt
